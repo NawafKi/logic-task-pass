@@ -1,0 +1,39 @@
+#Answer of Q1
+a_string = 'Welcome to Al 4 Climate'
+new_string = a_string.replace('4','for')
+
+print(new_string)
+
+
+# Answer of Q2 python find prime numbers in range 
+low, high = 2, 10
+primes = []
+
+for i in range(low, high + 1):
+    flag = 0
+
+    if i < 2:
+        continue
+    if i == 2:
+        primes.append(2)
+        continue
+
+    for x in range(2, i):
+        if i % x == 0:
+            flag = 1
+            break
+
+    if flag == 0:
+        primes.append(i)
+        
+print(primes)
+
+
+# Answer of Q3
+inp_str = "Python AI For Climate"
+str_cnt = inp_str.count("Python", 0 , 6)
+print(str_cnt)
+
+
+
+
